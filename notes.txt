@@ -1,5 +1,5 @@
 ******************** Shorthand to render a list of continuous quantities (e.g., in a drop down select field or such):-    
-      We create an array an map over it
+      We create an array of continuous numbers and map over it
 
 
 {Array.from({ length: "20" }, (_, idx) => idx + 1).map((num) => (
@@ -17,7 +17,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 
-In a input form filed or select field, these elements maintain their own state in DOM (inside the html element itself), which we can directly access.
+In a input form field or select field, these elements maintain their own state in DOM (inside the html element itself), which we can directly access.
 It makes it hard to read the values, and also leaves the state right in the DOM.
 We usually keeps the state in one central place, i.e. react app, not inside the DOM.
 By controlled elements, it is React that controls and owns the state of input fields and not the DOM.
@@ -26,7 +26,7 @@ We need state for that because the form data changes over time & we need to main
 3 steps:- 
     1) We create a state   [using "useState" hook]
 
-    2) We use that state as a value of input filed (element we want to control), OR, we force the element to always take the value of this state variable
+    2) We use that state as a value of input field (element we want to control), OR, we force the element to always take the value of this state variable
     [it gives "React" the control of the element]
 
     3) We update the state variable (by using the onChange event handler, where we set the variable to the current value of the field) 
